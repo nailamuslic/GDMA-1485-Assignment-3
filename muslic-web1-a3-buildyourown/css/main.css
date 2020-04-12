@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
 
 /* CSS Document */
 
@@ -61,6 +60,10 @@
 	margin: 0 auto;
 	width: 950px;
 }
+
+div {
+	width: 405px;
+}
 /*--------------------------------------------------------------
 2.0 - TOOLS
 -------------------------------------------------------------- */
@@ -77,9 +80,7 @@
 /*--------------------------------------------------------------
 4.0 - ELEMENTS
 -------------------------------------------------------------- */
-object {
-	margin-top: 40px;
-}
+
 
 a {
 	text-decoration: none;
@@ -87,30 +88,34 @@ a {
 }
 
 h1 {
-	font: normal normal 100 80px/100% 'Eczar', serif;
+	font: normal normal 100 83px/100% 'Eczar', serif;
+	float: left;
+	margin-top: 175px;
 }
 
+
 h2 {
-	text-transform: uppercase;
-	color: #a38f8e;
+	font: normal normal 100 53px/100% 'Eczar', serif;
 }
 
 ul:first-child li, ul:nth-child(2) li {
 	font: normal normal 100 20px/100% 'Eczar', serif;
 	list-style-type: none;
 	line-height: 40px;
-	
 }
 
-ul:first-child {
-	margin: 150px 0px 50px 65px;
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0px 0px 0px 40px;
+	color: #000;
 }
 
-	
-	/*-webkit-transform: rotate(-90deg);
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);*/
+p {
+	font-size: 12px;
+	line-height: 24px;
+	width: 345px;
+}
 
 /*--------------------------------------------------------------
 5.0 - OBJECTS
@@ -123,58 +128,47 @@ ul:first-child {
 6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
+.bg-beige {
+	background-color: #f0ece5;
+	padding: 115px 95px;
+}
+
+.row .col-1-2 {
+	margin: 40px 0px;
+}
+
 #pinksquare {
 	position: absolute;
 	height: 542px;
   	width: 100%;
 	background-color: #deb0a6;
 	top: 0px;
-	left: 48px;
-	z-index: -1;
+	right: -50px;
+	z-index: -3;
 }
 
-Nav {
-	display: inline-block;
+.col-1-2:first-child {
+	float: left;
+}
+.col-1-2:last-of-type {
 	float: right;
-	margin-top: 70px;
-	color: #000;
+	margin: 75px 0px;
 }
 
-nav li {
-	list-style-type: none;
-	display: inline;
-	margin: 15px;
-}
 
-.preheading {
+#preheading {
 	color: #fff;
 	font-family: 'Slabo 27px', serif;
 	line-height: 0px;
 }
 
-.preheading, nav li, h2 {
+#preheading, nav li {
 	font-size: 15px;
 	letter-spacing: 1px;
 }
 
-.col-1-2:first-of-type {
-	margin: 225px 0px 0px 0px;
-	
-	
-}
-
-.col-1-2 {
-	width: 475px;
-	display: block;
-}
-
-.col-1-2 p {
-	width: 340px;
-	line-height: 30px;
-}
-
 .dash {
-	height: 1px;
+	height: 2px;
 	width: 70px;
 	background-color: #a38f8e;
 	display: inline-block;
@@ -183,28 +177,121 @@ nav li {
 	
 .no {
 	font-family: 'Slabo 27px', serif;
-	font-size: 20px;
+	font-size: 25px;
 	display: inline;
 }
 
-.col-1-2:last-of-type {
-	float: right;
-}
-
-.col-1-2:first-of-type {
-	float: left;
-}
 
 #pinkportrait {
 	background-image: url("../img/pinkportrait.jpg"); 
 	background-repeat: no-repeat;
 	position: relative;
-	height: 600px;
-	width: 480px;
+	width: 443px;
+	height: 589px;
 	z-index: 5;
-	top: 90px;
-	left: 580px;
+	top: 160px;
+	right: -500px;
+}
+
+
+#project, #book {
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+}
+
+#project {
+	transform: rotate(90deg);
+	margin-left: 920px;
+	margin-top: 230px;
+}
+
+#book {
+	transform: rotate(-90deg);
+	margin-left: -470px;
+	margin-bottom: 400px;
+}
+
+.col-4-2:last-child {
+	float: right;
+	margin-right: 65px;
+	font-size: 35px;
+	margin-top: -20px;
+}
+
+.subhead {
+	text-transform: uppercase;
+	color: #a38f8e;
+}
+
+
+.col-5-2:last-child {
+	float: right;
+	margin-right: -70px;
+	margin-top: 90px;
+}
+
+.col-5-2:last-child p {
+	width: 305px;
+}
+
+.col-5-2:first-child {
+	float: left;
 	margin-bottom: 50px;
+}
+
+#lemonportrait {
+	background-image: url("../img/lemonportrait.jpg"); 
+	background-repeat: no-repeat;
+	position: relative;
+	width: 660px;
+	height: 440px;
+	z-index: 5;
+	top: -30px;
+	left: -125px;
+}
+
+.col-4-2 {
+	margin-bottom: 10px;
+}
+
+.col-6-2:first-child {
+	float: left;
+	margin-left: -380px;
+}
+
+.col-6-2:last-child {
+	float: right;
+	margin-bottom: 30px;
+}
+
+.col-6-2 {
+	margin-top: 580px;
+	margin-right: 0px;
+}
+
+.col-6-2 p {
+	padding-left: 40px;
+}
+
+#view p {
+	font: normal normal 100 12px/100% 'Eczar', serif;
+	margin-top: 30px;
+}
+
+#masked {
+	background-image: url("../img/maskportrait.jpg"); 
+	background-repeat: no-repeat;
+	position: relative;
+	width: 558px;
+	height: 450px;
+	z-index: 5;
+	top: -400px;
+	left: 0px;
+}
+
+.col-7-2:last-child {
+	display: inline;
 }
 
 /*--------------------------------------------------------------
