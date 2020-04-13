@@ -82,7 +82,7 @@ div {
 -------------------------------------------------------------- */
 
 
-a {
+nav a {
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -117,11 +117,80 @@ p {
 	width: 345px;
 }
 
+.col-6-2 p {
+	padding-left: 40px;
+}
+
+#view p {
+	font: normal normal 100 12px/100% 'Eczar', serif;
+	margin-top: 30px;
+}
+
+.col-5-2:last-child p {
+	width: 305px;
+}
+
+footer {
+	display: inline-block;
+	margin: 90px 0px;
+}
+
+.col-8-2:first-of-type object {
+	float: left;
+	width: 73px;
+}
+
+.col-8-2:first-of-type p {
+	float: left;
+	width: 150px;
+	font: normal normal 100 25px/100% 'Eczar', serif;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------------------------
 5.0 - OBJECTS
 -------------------------------------------------------------- */
 
+img {
+animation: fadeIn ease 10s;
+-webkit-animation: fadeIn ease 10s;
+-moz-animation: fadeIn ease 10s;
+-o-animation: fadeIn ease 10s;
+-ms-animation: fadeIn ease 10s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
 
 
 /*--------------------------------------------------------------
@@ -131,6 +200,9 @@ p {
 .bg-beige {
 	background-color: #f0ece5;
 	padding: 115px 95px;
+	width: 100%;
+	position: relative;
+	z-index: -5;
 }
 
 .row .col-1-2 {
@@ -231,10 +303,6 @@ p {
 	margin-top: 90px;
 }
 
-.col-5-2:last-child p {
-	width: 305px;
-}
-
 .col-5-2:first-child {
 	float: left;
 	margin-bottom: 50px;
@@ -270,15 +338,6 @@ p {
 	margin-right: 0px;
 }
 
-.col-6-2 p {
-	padding-left: 40px;
-}
-
-#view p {
-	font: normal normal 100 12px/100% 'Eczar', serif;
-	margin-top: 30px;
-}
-
 #masked {
 	background-image: url("../img/maskportrait.jpg"); 
 	background-repeat: no-repeat;
@@ -290,9 +349,53 @@ p {
 	left: 0px;
 }
 
-.col-7-2:last-child {
-	display: inline;
+.gallery {
+	display: inline-block;
+	float: left;
+	width: 270px;
 }
+
+.desc a {
+	margin: 0px 15px 0px 0px;
+}
+
+.col-7-2:last-child {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	top: 150px;
+	left: 350px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.col-8-2:first-of-type {
+	float: left;
+	width: 400px;
+}
+
+.col-8-2:last-of-type {
+	width: 900px;
+	float: right;
+}
+
+.column {
+	width: 250px;
+	display: inline-block;
+}
+
+
+.column li, address {
+	font-size: 12px;
+	text-transform: uppercase;
+	
+}
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 7.0 - UTILITIES
@@ -311,6 +414,27 @@ a:focus {
 }
 
 a:active {
+	color: #B15E60;
+}
+
+.column a {
+	color: #000;
+	text-decoration: none;
+}
+
+.column a:visited {
+	color: #000;
+}
+
+.column a:hover {
+	color: #B15E60;
+}
+
+.column a:focus {
+	color: #3B3B3B;
+}
+
+.column a:active {
 	color: #B15E60;
 }
 
